@@ -17,3 +17,8 @@ To create version/commit all changes by git (git commit -m "message")
 To send version/changes to github (git push origin main)
 
 To check remote url (git remote -v)
+
+To setup CI/CD pipeline in Render we need 3 information
+1 - RENDER_EMAIL = prakhargpt201212@gmail.com
+2 - RENDER_API_KEY = rnd_1iio9lA9vZdFVPRgKfE82KJf8jkc
+3 - RENDER_APP_NAME = 
