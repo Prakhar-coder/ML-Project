@@ -22,3 +22,20 @@ To setup CI/CD pipeline in Render we need 3 information
 1 - RENDER_EMAIL = prakhargpt201212@gmail.com
 2 - RENDER_API_KEY = rnd_1iio9lA9vZdFVPRgKfE82KJf8jkc
 3 - RENDER_APP_NAME = 
+
+
+UNDER SETUP.PY FILE (uses when we want this project works as a packages(in production environment) 
+so anyone can install like from flask import flask  )
+find_packages() -- This function will return all the folder names(packages) which have
+file (# __init_.py) in this case there is "housing" folder. 
+
+
+UNDER SETUP.PY FILE/REQUIREMENTS.TEXT
+-e . finds all the packages(housing in this case) that have .py file's and from that files
+pickup all the libraries that are used so that at the time of pip install -r requirements.txt
+run all these libraries automatically installed.(only check in route folder not in entire system)
+
+Whenever we want to install -e . then setup.py file always have to be there in current repository, 
+if setup.py file not exists then we can't install -e .
+
+find_packages() and -e . both does the same work.

@@ -1,2 +1,6 @@
 Flask
-gunicorn==20.1.0
+gunicorn
+numpy
+pandas
+scikit-learn
+-e .
